@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9554BD53206A79D500013AF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD52206A79D500013AF5 /* AppDelegate.swift */; };
+		9554BD55206A79D500013AF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD54206A79D500013AF5 /* ViewController.swift */; };
+		9554BD57206A79D500013AF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9554BD56206A79D500013AF5 /* Assets.xcassets */; };
+		9554BD5A206A79D500013AF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9554BD58206A79D500013AF5 /* Main.storyboard */; };
+		9554BD66206A79D500013AF5 /* SuperKomputer_MacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD65206A79D500013AF5 /* SuperKomputer_MacTests.swift */; };
+		9554BD71206A79D500013AF5 /* SuperKomputer_MacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD70206A79D500013AF5 /* SuperKomputer_MacUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9554BD62206A79D500013AF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9554BD47206A79D500013AF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9554BD4E206A79D500013AF5;
+			remoteInfo = "SuperKomputer-Mac";
+		};
+		9554BD6D206A79D500013AF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9554BD47206A79D500013AF5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9554BD4E206A79D500013AF5;
+			remoteInfo = "SuperKomputer-Mac";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9554BD4F206A79D500013AF5 /* SuperKomputer-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SuperKomputer-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9554BD52206A79D500013AF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9554BD54206A79D500013AF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9554BD56206A79D500013AF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9554BD59206A79D500013AF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9554BD5B206A79D500013AF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9554BD5C206A79D500013AF5 /* SuperKomputer_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SuperKomputer_Mac.entitlements; sourceTree = "<group>"; };
+		9554BD61206A79D500013AF5 /* SuperKomputer-MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SuperKomputer-MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9554BD65206A79D500013AF5 /* SuperKomputer_MacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperKomputer_MacTests.swift; sourceTree = "<group>"; };
+		9554BD67206A79D500013AF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9554BD6C206A79D500013AF5 /* SuperKomputer-MacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SuperKomputer-MacUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9554BD70206A79D500013AF5 /* SuperKomputer_MacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperKomputer_MacUITests.swift; sourceTree = "<group>"; };
+		9554BD72206A79D500013AF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9554BD4C206A79D500013AF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9554BD5E206A79D500013AF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9554BD69206A79D500013AF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9554BD46206A79D500013AF5 = {
+			isa = PBXGroup;
+			children = (
+				9554BD51206A79D500013AF5 /* SuperKomputer-Mac */,
+				9554BD64206A79D500013AF5 /* SuperKomputer-MacTests */,
+				9554BD6F206A79D500013AF5 /* SuperKomputer-MacUITests */,
+				9554BD50206A79D500013AF5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9554BD50206A79D500013AF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9554BD4F206A79D500013AF5 /* SuperKomputer-Mac.app */,
+				9554BD61206A79D500013AF5 /* SuperKomputer-MacTests.xctest */,
+				9554BD6C206A79D500013AF5 /* SuperKomputer-MacUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9554BD51206A79D500013AF5 /* SuperKomputer-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				9554BD52206A79D500013AF5 /* AppDelegate.swift */,
+				9554BD54206A79D500013AF5 /* ViewController.swift */,
+				9554BD56206A79D500013AF5 /* Assets.xcassets */,
+				9554BD58206A79D500013AF5 /* Main.storyboard */,
+				9554BD5B206A79D500013AF5 /* Info.plist */,
+				9554BD5C206A79D500013AF5 /* SuperKomputer_Mac.entitlements */,
+			);
+			path = "SuperKomputer-Mac";
+			sourceTree = "<group>";
+		};
+		9554BD64206A79D500013AF5 /* SuperKomputer-MacTests */ = {
+			isa = PBXGroup;
+			children = (
+				9554BD65206A79D500013AF5 /* SuperKomputer_MacTests.swift */,
+				9554BD67206A79D500013AF5 /* Info.plist */,
+			);
+			path = "SuperKomputer-MacTests";
+			sourceTree = "<group>";
+		};
+		9554BD6F206A79D500013AF5 /* SuperKomputer-MacUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9554BD70206A79D500013AF5 /* SuperKomputer_MacUITests.swift */,
+				9554BD72206A79D500013AF5 /* Info.plist */,
+			);
+			path = "SuperKomputer-MacUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9554BD4E206A79D500013AF5 /* SuperKomputer-Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9554BD75206A79D500013AF5 /* Build configuration list for PBXNativeTarget "SuperKomputer-Mac" */;
+			buildPhases = (
+				9554BD4B206A79D500013AF5 /* Sources */,
+				9554BD4C206A79D500013AF5 /* Frameworks */,
+				9554BD4D206A79D500013AF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SuperKomputer-Mac";
+			productName = "SuperKomputer-Mac";
+			productReference = 9554BD4F206A79D500013AF5 /* SuperKomputer-Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9554BD60206A79D500013AF5 /* SuperKomputer-MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9554BD78206A79D500013AF5 /* Build configuration list for PBXNativeTarget "SuperKomputer-MacTests" */;
+			buildPhases = (
+				9554BD5D206A79D500013AF5 /* Sources */,
+				9554BD5E206A79D500013AF5 /* Frameworks */,
+				9554BD5F206A79D500013AF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9554BD63206A79D500013AF5 /* PBXTargetDependency */,
+			);
+			name = "SuperKomputer-MacTests";
+			productName = "SuperKomputer-MacTests";
+			productReference = 9554BD61206A79D500013AF5 /* SuperKomputer-MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9554BD6B206A79D500013AF5 /* SuperKomputer-MacUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9554BD7B206A79D500013AF5 /* Build configuration list for PBXNativeTarget "SuperKomputer-MacUITests" */;
+			buildPhases = (
+				9554BD68206A79D500013AF5 /* Sources */,
+				9554BD69206A79D500013AF5 /* Frameworks */,
+				9554BD6A206A79D500013AF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9554BD6E206A79D500013AF5 /* PBXTargetDependency */,
+			);
+			name = "SuperKomputer-MacUITests";
+			productName = "SuperKomputer-MacUITests";
+			productReference = 9554BD6C206A79D500013AF5 /* SuperKomputer-MacUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9554BD47206A79D500013AF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = SuperKomputer;
+				TargetAttributes = {
+					9554BD4E206A79D500013AF5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					9554BD60206A79D500013AF5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9554BD4E206A79D500013AF5;
+					};
+					9554BD6B206A79D500013AF5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9554BD4E206A79D500013AF5;
+					};
+				};
+			};
+			buildConfigurationList = 9554BD4A206A79D500013AF5 /* Build configuration list for PBXProject "SuperKomputer-Mac" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9554BD46206A79D500013AF5;
+			productRefGroup = 9554BD50206A79D500013AF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9554BD4E206A79D500013AF5 /* SuperKomputer-Mac */,
+				9554BD60206A79D500013AF5 /* SuperKomputer-MacTests */,
+				9554BD6B206A79D500013AF5 /* SuperKomputer-MacUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9554BD4D206A79D500013AF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9554BD57206A79D500013AF5 /* Assets.xcassets in Resources */,
+				9554BD5A206A79D500013AF5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9554BD5F206A79D500013AF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9554BD6A206A79D500013AF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9554BD4B206A79D500013AF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9554BD55206A79D500013AF5 /* ViewController.swift in Sources */,
+				9554BD53206A79D500013AF5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9554BD5D206A79D500013AF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9554BD66206A79D500013AF5 /* SuperKomputer_MacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9554BD68206A79D500013AF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9554BD71206A79D500013AF5 /* SuperKomputer_MacUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9554BD63206A79D500013AF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9554BD4E206A79D500013AF5 /* SuperKomputer-Mac */;
+			targetProxy = 9554BD62206A79D500013AF5 /* PBXContainerItemProxy */;
+		};
+		9554BD6E206A79D500013AF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9554BD4E206A79D500013AF5 /* SuperKomputer-Mac */;
+			targetProxy = 9554BD6D206A79D500013AF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9554BD58206A79D500013AF5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9554BD59206A79D500013AF5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9554BD73206A79D500013AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9554BD74206A79D500013AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		9554BD76206A79D500013AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SuperKomputer-Mac/SuperKomputer_Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CRCC8S2RPF;
+				INFOPLIST_FILE = "SuperKomputer-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.superkomputer.SuperKomputer-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		9554BD77206A79D500013AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "SuperKomputer-Mac/SuperKomputer_Mac.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CRCC8S2RPF;
+				INFOPLIST_FILE = "SuperKomputer-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.superkomputer.SuperKomputer-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		9554BD79206A79D500013AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CRCC8S2RPF;
+				INFOPLIST_FILE = "SuperKomputer-MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.superkomputer.SuperKomputer-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperKomputer-Mac.app/Contents/MacOS/SuperKomputer-Mac";
+			};
+			name = Debug;
+		};
+		9554BD7A206A79D500013AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CRCC8S2RPF;
+				INFOPLIST_FILE = "SuperKomputer-MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.superkomputer.SuperKomputer-MacTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperKomputer-Mac.app/Contents/MacOS/SuperKomputer-Mac";
+			};
+			name = Release;
+		};
+		9554BD7C206A79D500013AF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CRCC8S2RPF;
+				INFOPLIST_FILE = "SuperKomputer-MacUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.superkomputer.SuperKomputer-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "SuperKomputer-Mac";
+			};
+			name = Debug;
+		};
+		9554BD7D206A79D500013AF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CRCC8S2RPF;
+				INFOPLIST_FILE = "SuperKomputer-MacUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.superkomputer.SuperKomputer-MacUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "SuperKomputer-Mac";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9554BD4A206A79D500013AF5 /* Build configuration list for PBXProject "SuperKomputer-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9554BD73206A79D500013AF5 /* Debug */,
+				9554BD74206A79D500013AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9554BD75206A79D500013AF5 /* Build configuration list for PBXNativeTarget "SuperKomputer-Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9554BD76206A79D500013AF5 /* Debug */,
+				9554BD77206A79D500013AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9554BD78206A79D500013AF5 /* Build configuration list for PBXNativeTarget "SuperKomputer-MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9554BD79206A79D500013AF5 /* Debug */,
+				9554BD7A206A79D500013AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9554BD7B206A79D500013AF5 /* Build configuration list for PBXNativeTarget "SuperKomputer-MacUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9554BD7C206A79D500013AF5 /* Debug */,
+				9554BD7D206A79D500013AF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9554BD47206A79D500013AF5 /* Project object */;
+}
