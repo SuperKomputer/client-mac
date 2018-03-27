@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87FF621E206AC8E800A1DE8F /* ClustersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF6217206AC8E700A1DE8F /* ClustersFactory.swift */; };
+		87FF621F206AC8E800A1DE8F /* ClusterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF6218206AC8E700A1DE8F /* ClusterListViewModel.swift */; };
+		87FF6220206AC8E800A1DE8F /* ClusterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF6219206AC8E700A1DE8F /* ClusterViewModel.swift */; };
+		87FF6221206AC8E800A1DE8F /* Cluster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF621A206AC8E700A1DE8F /* Cluster.swift */; };
+		87FF6222206AC8E800A1DE8F /* APICore+ClusterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF621C206AC8E800A1DE8F /* APICore+ClusterList.swift */; };
+		87FF6223206AC8E800A1DE8F /* APICore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF621D206AC8E800A1DE8F /* APICore.swift */; };
+		87FF6225206AC9DD00A1DE8F /* ClusterFactory_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF6224206AC9DD00A1DE8F /* ClusterFactory_Tests.swift */; };
+		87FF6227206ACFA500A1DE8F /* clusterList.json in Resources */ = {isa = PBXBuildFile; fileRef = 87FF6226206ACFA500A1DE8F /* clusterList.json */; };
 		9554BD53206A79D500013AF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD52206A79D500013AF5 /* AppDelegate.swift */; };
 		9554BD55206A79D500013AF5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD54206A79D500013AF5 /* WelcomeViewController.swift */; };
 		9554BD57206A79D500013AF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9554BD56206A79D500013AF5 /* Assets.xcassets */; };
@@ -34,6 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		87FF6217206AC8E700A1DE8F /* ClustersFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClustersFactory.swift; sourceTree = "<group>"; };
+		87FF6218206AC8E700A1DE8F /* ClusterListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClusterListViewModel.swift; sourceTree = "<group>"; };
+		87FF6219206AC8E700A1DE8F /* ClusterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClusterViewModel.swift; sourceTree = "<group>"; };
+		87FF621A206AC8E700A1DE8F /* Cluster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cluster.swift; sourceTree = "<group>"; };
+		87FF621C206AC8E800A1DE8F /* APICore+ClusterList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APICore+ClusterList.swift"; sourceTree = "<group>"; };
+		87FF621D206AC8E800A1DE8F /* APICore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICore.swift; sourceTree = "<group>"; };
+		87FF6224206AC9DD00A1DE8F /* ClusterFactory_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterFactory_Tests.swift; sourceTree = "<group>"; };
+		87FF6226206ACFA500A1DE8F /* clusterList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clusterList.json; sourceTree = "<group>"; };
 		9554BD4F206A79D500013AF5 /* SuperKomputer-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SuperKomputer-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9554BD52206A79D500013AF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9554BD54206A79D500013AF5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +91,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		87FF6216206AC8E700A1DE8F /* ClusterList */ = {
+			isa = PBXGroup;
+			children = (
+				87FF6217206AC8E700A1DE8F /* ClustersFactory.swift */,
+				87FF6218206AC8E700A1DE8F /* ClusterListViewModel.swift */,
+				87FF6219206AC8E700A1DE8F /* ClusterViewModel.swift */,
+				87FF621A206AC8E700A1DE8F /* Cluster.swift */,
+			);
+			path = ClusterList;
+			sourceTree = "<group>";
+		};
+		87FF621B206AC8E800A1DE8F /* APICore */ = {
+			isa = PBXGroup;
+			children = (
+				87FF621C206AC8E800A1DE8F /* APICore+ClusterList.swift */,
+				87FF621D206AC8E800A1DE8F /* APICore.swift */,
+			);
+			path = APICore;
+			sourceTree = "<group>";
+		};
 		9554BD46206A79D500013AF5 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +134,8 @@
 		9554BD51206A79D500013AF5 /* SuperKomputer-Mac */ = {
 			isa = PBXGroup;
 			children = (
+				87FF621B206AC8E800A1DE8F /* APICore */,
+				87FF6216206AC8E700A1DE8F /* ClusterList */,
 				9554BD52206A79D500013AF5 /* AppDelegate.swift */,
 				9554BD54206A79D500013AF5 /* WelcomeViewController.swift */,
 				9554BD81206AB1C700013AF5 /* CustomWindowController.swift */,
@@ -114,6 +152,8 @@
 			children = (
 				9554BD65206A79D500013AF5 /* SuperKomputer_MacTests.swift */,
 				9554BD67206A79D500013AF5 /* Info.plist */,
+				87FF6224206AC9DD00A1DE8F /* ClusterFactory_Tests.swift */,
+				87FF6226206ACFA500A1DE8F /* clusterList.json */,
 			);
 			path = "SuperKomputer-MacTests";
 			sourceTree = "<group>";
@@ -243,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87FF6227206ACFA500A1DE8F /* clusterList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +301,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87FF6222206AC8E800A1DE8F /* APICore+ClusterList.swift in Sources */,
 				9554BD55206A79D500013AF5 /* WelcomeViewController.swift in Sources */,
+				87FF6220206AC8E800A1DE8F /* ClusterViewModel.swift in Sources */,
+				87FF621E206AC8E800A1DE8F /* ClustersFactory.swift in Sources */,
+				87FF6223206AC8E800A1DE8F /* APICore.swift in Sources */,
 				9554BD82206AB1C700013AF5 /* CustomWindowController.swift in Sources */,
 				9554BD53206A79D500013AF5 /* AppDelegate.swift in Sources */,
+				87FF621F206AC8E800A1DE8F /* ClusterListViewModel.swift in Sources */,
+				87FF6221206AC8E800A1DE8F /* Cluster.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9554BD66206A79D500013AF5 /* SuperKomputer_MacTests.swift in Sources */,
+				87FF6225206AC9DD00A1DE8F /* ClusterFactory_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

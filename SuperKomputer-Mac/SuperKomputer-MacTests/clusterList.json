@@ -1,0 +1,11 @@
+{
+  "items":[
+           {
+           "clusterId": "test1.cluster",
+           "numMasters": 1,
+           "numWorkers": 5,
+           "status": "active",
+           "url": "10.20.20.160"
+           }
+    ]
+}
