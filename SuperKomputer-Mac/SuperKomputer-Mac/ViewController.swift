@@ -8,12 +8,29 @@
 
 import Cocoa
 
-class ViewController: NSViewController {
+extension NSButton {
+    func setWhiteTitle(_ title: String) {
+        
+        let style = NSMutableParagraphStyle()
+        style.alignment = .center
+        let font: NSFont = NSFont.systemFont(ofSize: 18)
+        self.attributedTitle = NSAttributedString(string: title,
+                                                  attributes: [NSAttributedStringKey.foregroundColor : NSColor.white,
+                                                               NSAttributedStringKey.font : font,
+                                                               NSAttributedStringKey.paragraphStyle: style])
+    }
+}
 
+class WelcomeViewController: NSViewController {
+
+    @IBOutlet weak var registerBtn: NSButton!
+    @IBOutlet weak var loginBtn: NSButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.view.layer?.backgroundColor = NSColor.white.cgColor
+        loginBtn.setWhiteTitle("Login")
+        registerBtn.setWhiteTitle("Register")
     }
 
     override var representedObject: Any? {
@@ -22,6 +39,12 @@ class ViewController: NSViewController {
         }
     }
 
-
+    @IBAction func register(_ sender: Any) {
+        
+    }
+    
+    @IBAction func login(_ sender: Any) {
+        
+    }
 }
 
