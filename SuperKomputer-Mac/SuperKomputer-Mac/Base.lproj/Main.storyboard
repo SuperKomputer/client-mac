@@ -1033,6 +1033,135 @@
             </objects>
             <point key="canvasLocation" x="62" y="1648"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="yTA-iO-1d7">
+            <objects>
+                <viewController storyboardIdentifier="login" id="Jim-Fm-fZg" customClass="LoginViewController" customModule="SuperKomputer_Mac" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Db8-YB-d2U">
+                        <rect key="frame" x="0.0" y="0.0" width="720" height="568"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3BM-aS-qEv">
+                                <rect key="frame" x="298" y="424" width="124" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="KDL-SR-hI6"/>
+                                    <constraint firstAttribute="width" constant="124" id="igE-nq-OFq"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="top" imageScaling="proportionallyDown" image="sk-logo-2" id="WGK-gX-2h4"/>
+                            </imageView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7lG-ln-1B2">
+                                <rect key="frame" x="199" y="365" width="322" height="51"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="SuperKomputer" id="K1h-gf-yvn">
+                                    <font key="font" metaFont="systemBold" size="42"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <secureTextField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hCH-ak-Q5r">
+                                <rect key="frame" x="123" y="279" width="474" height="34"/>
+                                <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="password" drawsBackground="YES" usesSingleLineMode="YES" id="Vvi-U5-fiM">
+                                    <font key="font" metaFont="system" size="24"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <allowedInputSourceLocales>
+                                        <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                    </allowedInputSourceLocales>
+                                </secureTextFieldCell>
+                            </secureTextField>
+                            <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="SeK-Rf-cxL">
+                                <rect key="frame" x="123" y="213" width="237" height="34"/>
+                                <view key="contentView" id="OP3-q0-CSU">
+                                    <rect key="frame" x="1" y="1" width="235" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1sQ-JP-e7z">
+                                            <rect key="frame" x="1" y="-2" width="224" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="bevel" title="Cancel" bezelStyle="rounded" alignment="center" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="fd2-qY-4Rf">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="systemBold"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="cancel:" target="Jim-Fm-fZg" id="rfm-Wq-pcT"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="237" id="ZBF-rB-JF3"/>
+                                    <constraint firstAttribute="height" constant="34" id="ZbE-Z9-I8B"/>
+                                </constraints>
+                                <color key="borderColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="fillColor" red="0.82849723099999995" green="0.45408711039999999" blue="0.50369339869999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </box>
+                            <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="TWT-xu-slr">
+                                <rect key="frame" x="380" y="213" width="217" height="34"/>
+                                <view key="contentView" id="Fk3-qD-cmy">
+                                    <rect key="frame" x="1" y="1" width="215" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pi9-S5-6Rl">
+                                            <rect key="frame" x="1" y="-2" width="224" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="bevel" title="Login" bezelStyle="rounded" alignment="center" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="B9G-R6-u9V">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="systemBold"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="login:" target="Jim-Fm-fZg" id="p45-go-LnG"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="1Ci-sg-3re"/>
+                                    <constraint firstAttribute="width" constant="217" id="jFo-yg-kb5"/>
+                                </constraints>
+                                <color key="borderColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="fillColor" red="0.0" green="0.67843137249999996" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </box>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kFj-Aw-cIY">
+                                <rect key="frame" x="123" y="323" width="474" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="474" id="PjE-md-NeK"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="username" drawsBackground="YES" id="5hi-HM-Ysf">
+                                    <font key="font" metaFont="system" size="24"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <outlet property="nextKeyView" destination="hCH-ak-Q5r" id="ibS-FD-Acj"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3BM-aS-qEv" firstAttribute="top" secondItem="Db8-YB-d2U" secondAttribute="top" constant="20" id="8AV-81-d8a"/>
+                            <constraint firstItem="hCH-ak-Q5r" firstAttribute="top" secondItem="kFj-Aw-cIY" secondAttribute="bottom" constant="10" id="B6z-6Y-ckn"/>
+                            <constraint firstItem="7lG-ln-1B2" firstAttribute="top" secondItem="3BM-aS-qEv" secondAttribute="bottom" constant="8" id="I7g-JU-T4O"/>
+                            <constraint firstItem="7lG-ln-1B2" firstAttribute="centerX" secondItem="Db8-YB-d2U" secondAttribute="centerX" id="Ico-bt-Jl8"/>
+                            <constraint firstItem="TWT-xu-slr" firstAttribute="leading" secondItem="SeK-Rf-cxL" secondAttribute="trailing" constant="20" id="M6x-m5-wPQ"/>
+                            <constraint firstItem="SeK-Rf-cxL" firstAttribute="top" secondItem="hCH-ak-Q5r" secondAttribute="bottom" constant="32" id="UN3-i6-jRE"/>
+                            <constraint firstItem="SeK-Rf-cxL" firstAttribute="leading" secondItem="hCH-ak-Q5r" secondAttribute="leading" id="hLO-cN-G79"/>
+                            <constraint firstItem="kFj-Aw-cIY" firstAttribute="top" secondItem="7lG-ln-1B2" secondAttribute="bottom" constant="8" id="inc-oY-ozN"/>
+                            <constraint firstItem="hCH-ak-Q5r" firstAttribute="centerX" secondItem="kFj-Aw-cIY" secondAttribute="centerX" id="jVe-Np-k80"/>
+                            <constraint firstItem="TWT-xu-slr" firstAttribute="top" secondItem="SeK-Rf-cxL" secondAttribute="top" id="sDL-SH-yRd"/>
+                            <constraint firstItem="hCH-ak-Q5r" firstAttribute="width" secondItem="kFj-Aw-cIY" secondAttribute="width" id="t6g-fb-VXB"/>
+                            <constraint firstItem="kFj-Aw-cIY" firstAttribute="centerX" secondItem="Db8-YB-d2U" secondAttribute="centerX" id="tNl-td-I1r"/>
+                            <constraint firstItem="3BM-aS-qEv" firstAttribute="centerX" secondItem="Db8-YB-d2U" secondAttribute="centerX" id="zN5-If-evW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelBtn" destination="1sQ-JP-e7z" id="1hA-9U-9Mg"/>
+                        <outlet property="loginBtn" destination="Pi9-S5-6Rl" id="mns-V0-Yap"/>
+                        <outlet property="password" destination="hCH-ak-Q5r" id="Rdr-wA-6PC"/>
+                        <outlet property="username" destination="kFj-Aw-cIY" id="C6Y-np-qQ4"/>
+                    </connections>
+                </viewController>
+                <customObject id="eEh-i6-oKv" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="1648"/>
+        </scene>
     </scenes>
     <resources>
         <image name="sk-logo-2" width="180" height="180"/>
