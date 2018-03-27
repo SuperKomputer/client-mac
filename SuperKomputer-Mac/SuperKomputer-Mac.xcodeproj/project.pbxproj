@@ -22,6 +22,9 @@
 		9554BD66206A79D500013AF5 /* SuperKomputer_MacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD65206A79D500013AF5 /* SuperKomputer_MacTests.swift */; };
 		9554BD71206A79D500013AF5 /* SuperKomputer_MacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD70206A79D500013AF5 /* SuperKomputer_MacUITests.swift */; };
 		9554BD82206AB1C700013AF5 /* CustomWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD81206AB1C700013AF5 /* CustomWindowController.swift */; };
+		9554BD86206ACC9C00013AF5 /* CustomWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD85206ACC9C00013AF5 /* CustomWindow.swift */; };
+		9554BD88206ACFE000013AF5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD87206ACFE000013AF5 /* RegisterViewController.swift */; };
+		9554BD8A206AD82E00013AF5 /* NSButton+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD89206AD82E00013AF5 /* NSButton+Custom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		9554BD70206A79D500013AF5 /* SuperKomputer_MacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperKomputer_MacUITests.swift; sourceTree = "<group>"; };
 		9554BD72206A79D500013AF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9554BD81206AB1C700013AF5 /* CustomWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWindowController.swift; sourceTree = "<group>"; };
+		9554BD85206ACC9C00013AF5 /* CustomWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWindow.swift; sourceTree = "<group>"; };
+		9554BD87206ACFE000013AF5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		9554BD89206AD82E00013AF5 /* NSButton+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSButton+Custom.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +142,11 @@
 			children = (
 				87FF621B206AC8E800A1DE8F /* APICore */,
 				87FF6216206AC8E700A1DE8F /* ClusterList */,
+				9554BD89206AD82E00013AF5 /* NSButton+Custom.swift */,
 				9554BD52206A79D500013AF5 /* AppDelegate.swift */,
 				9554BD54206A79D500013AF5 /* WelcomeViewController.swift */,
+				9554BD87206ACFE000013AF5 /* RegisterViewController.swift */,
+				9554BD85206ACC9C00013AF5 /* CustomWindow.swift */,
 				9554BD81206AB1C700013AF5 /* CustomWindowController.swift */,
 				9554BD56206A79D500013AF5 /* Assets.xcassets */,
 				9554BD58206A79D500013AF5 /* Main.storyboard */,
@@ -306,10 +315,13 @@
 				87FF6220206AC8E800A1DE8F /* ClusterViewModel.swift in Sources */,
 				87FF621E206AC8E800A1DE8F /* ClustersFactory.swift in Sources */,
 				87FF6223206AC8E800A1DE8F /* APICore.swift in Sources */,
+				9554BD88206ACFE000013AF5 /* RegisterViewController.swift in Sources */,
 				9554BD82206AB1C700013AF5 /* CustomWindowController.swift in Sources */,
+				9554BD8A206AD82E00013AF5 /* NSButton+Custom.swift in Sources */,
 				9554BD53206A79D500013AF5 /* AppDelegate.swift in Sources */,
 				87FF621F206AC8E800A1DE8F /* ClusterListViewModel.swift in Sources */,
 				87FF6221206AC8E800A1DE8F /* Cluster.swift in Sources */,
+				9554BD86206ACC9C00013AF5 /* CustomWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
