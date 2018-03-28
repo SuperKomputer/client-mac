@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias CreateUserCallBlock = (_ user: User) -> Void
+typealias CreateUserCallBlock = (_ user: User?) -> Void
 
 class RegisterViewModel {
     
@@ -19,7 +19,9 @@ class RegisterViewModel {
         
         apiCore.createUser(param: param) { (response) in
             if response.success {
-                callBack(response.user!)
+                callBack(response.user)
+            } else {
+                callBack(nil)
             }
         }
     }
