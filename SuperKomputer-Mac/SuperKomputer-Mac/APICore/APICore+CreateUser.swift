@@ -64,8 +64,7 @@ extension APICore {
         let createTask = session.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
             
             // TODO: Need to revist, need to check the ststus code for craete user flow
-            
-            let responseParam = CreateUserResponseParam(success: ((error != nil) ? false : true),
+            let responseParam = CreateUserResponseParam(success: (error == nil),
                                                         user: param.user,
                                                         error: error)
             
