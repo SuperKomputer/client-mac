@@ -18,7 +18,7 @@ struct ClusterResponseParam {
     var error: Error
 }
 
-let kClustersServerAPI = "/users/{username}/clusters"
+let kClustersServerAPI = "\(kBaseURL)/users/{username}/clusters"
 
 typealias getClustersBlock = (_ responseParam: ClusterResponseParam) -> Void
 
