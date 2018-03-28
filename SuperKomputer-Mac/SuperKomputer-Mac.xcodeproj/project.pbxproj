@@ -30,6 +30,8 @@
 		9554BD8A206AD82E00013AF5 /* NSButton+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD89206AD82E00013AF5 /* NSButton+Custom.swift */; };
 		9554BD8C206AE0E200013AF5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD8B206AE0E200013AF5 /* LoginViewController.swift */; };
 		9554BD8E206B6D2B00013AF5 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD8D206B6D2B00013AF5 /* DashboardViewController.swift */; };
+		9554BD90206B85CB00013AF5 /* RentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD8F206B85CB00013AF5 /* RentViewController.swift */; };
+		9554BD92206B85DE00013AF5 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD91206B85DE00013AF5 /* RequestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		9554BD89206AD82E00013AF5 /* NSButton+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSButton+Custom.swift"; sourceTree = "<group>"; };
 		9554BD8B206AE0E200013AF5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9554BD8D206B6D2B00013AF5 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		9554BD8F206B85CB00013AF5 /* RentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentViewController.swift; sourceTree = "<group>"; };
+		9554BD91206B85DE00013AF5 /* RequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,8 @@
 				87FF622E206B777500A1DE8F /* RegisterViewModel.swift */,
 				9554BD8B206AE0E200013AF5 /* LoginViewController.swift */,
 				9554BD8D206B6D2B00013AF5 /* DashboardViewController.swift */,
+				9554BD91206B85DE00013AF5 /* RequestViewController.swift */,
+				9554BD8F206B85CB00013AF5 /* RentViewController.swift */,
 				9554BD85206ACC9C00013AF5 /* CustomWindow.swift */,
 				9554BD81206AB1C700013AF5 /* CustomWindowController.swift */,
 				9554BD56206A79D500013AF5 /* Assets.xcassets */,
@@ -346,6 +352,8 @@
 				9554BD53206A79D500013AF5 /* AppDelegate.swift in Sources */,
 				87FF621F206AC8E800A1DE8F /* ClusterListViewModel.swift in Sources */,
 				87FF6221206AC8E800A1DE8F /* Cluster.swift in Sources */,
+				9554BD90206B85CB00013AF5 /* RentViewController.swift in Sources */,
+				9554BD92206B85DE00013AF5 /* RequestViewController.swift in Sources */,
 				9554BD86206ACC9C00013AF5 /* CustomWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
