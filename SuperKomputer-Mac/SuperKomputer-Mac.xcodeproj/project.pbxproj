@@ -15,6 +15,9 @@
 		87FF6223206AC8E800A1DE8F /* APICore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF621D206AC8E800A1DE8F /* APICore.swift */; };
 		87FF6225206AC9DD00A1DE8F /* ClusterFactory_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF6224206AC9DD00A1DE8F /* ClusterFactory_Tests.swift */; };
 		87FF6227206ACFA500A1DE8F /* clusterList.json in Resources */ = {isa = PBXBuildFile; fileRef = 87FF6226206ACFA500A1DE8F /* clusterList.json */; };
+		87FF622B206B6CF400A1DE8F /* APICore+CreateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF622A206B6CF400A1DE8F /* APICore+CreateUser.swift */; };
+		87FF622D206B6D3900A1DE8F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF622C206B6D3900A1DE8F /* User.swift */; };
+		87FF622F206B777500A1DE8F /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF622E206B777500A1DE8F /* RegisterViewModel.swift */; };
 		9554BD53206A79D500013AF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD52206A79D500013AF5 /* AppDelegate.swift */; };
 		9554BD55206A79D500013AF5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD54206A79D500013AF5 /* WelcomeViewController.swift */; };
 		9554BD57206A79D500013AF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9554BD56206A79D500013AF5 /* Assets.xcassets */; };
@@ -54,6 +57,9 @@
 		87FF621D206AC8E800A1DE8F /* APICore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICore.swift; sourceTree = "<group>"; };
 		87FF6224206AC9DD00A1DE8F /* ClusterFactory_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterFactory_Tests.swift; sourceTree = "<group>"; };
 		87FF6226206ACFA500A1DE8F /* clusterList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clusterList.json; sourceTree = "<group>"; };
+		87FF622A206B6CF400A1DE8F /* APICore+CreateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APICore+CreateUser.swift"; sourceTree = "<group>"; };
+		87FF622C206B6D3900A1DE8F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		87FF622E206B777500A1DE8F /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		9554BD4F206A79D500013AF5 /* SuperKomputer-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SuperKomputer-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9554BD52206A79D500013AF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9554BD54206A79D500013AF5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +121,7 @@
 			children = (
 				87FF621C206AC8E800A1DE8F /* APICore+ClusterList.swift */,
 				87FF621D206AC8E800A1DE8F /* APICore.swift */,
+				87FF622A206B6CF400A1DE8F /* APICore+CreateUser.swift */,
 			);
 			path = APICore;
 			sourceTree = "<group>";
@@ -142,12 +149,14 @@
 		9554BD51206A79D500013AF5 /* SuperKomputer-Mac */ = {
 			isa = PBXGroup;
 			children = (
+				87FF622C206B6D3900A1DE8F /* User.swift */,
 				87FF621B206AC8E800A1DE8F /* APICore */,
 				87FF6216206AC8E700A1DE8F /* ClusterList */,
 				9554BD89206AD82E00013AF5 /* NSButton+Custom.swift */,
 				9554BD52206A79D500013AF5 /* AppDelegate.swift */,
 				9554BD54206A79D500013AF5 /* WelcomeViewController.swift */,
 				9554BD87206ACFE000013AF5 /* RegisterViewController.swift */,
+				87FF622E206B777500A1DE8F /* RegisterViewModel.swift */,
 				9554BD8B206AE0E200013AF5 /* LoginViewController.swift */,
 				9554BD85206ACC9C00013AF5 /* CustomWindow.swift */,
 				9554BD81206AB1C700013AF5 /* CustomWindowController.swift */,
@@ -248,6 +257,11 @@
 					9554BD4E206A79D500013AF5 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					9554BD60206A79D500013AF5 = {
 						CreatedOnToolsVersion = 9.2;
@@ -313,8 +327,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87FF622B206B6CF400A1DE8F /* APICore+CreateUser.swift in Sources */,
 				87FF6222206AC8E800A1DE8F /* APICore+ClusterList.swift in Sources */,
 				9554BD8C206AE0E200013AF5 /* LoginViewController.swift in Sources */,
+				87FF622F206B777500A1DE8F /* RegisterViewModel.swift in Sources */,
 				9554BD55206A79D500013AF5 /* WelcomeViewController.swift in Sources */,
 				87FF6220206AC8E800A1DE8F /* ClusterViewModel.swift in Sources */,
 				87FF621E206AC8E800A1DE8F /* ClustersFactory.swift in Sources */,
@@ -322,6 +338,7 @@
 				9554BD88206ACFE000013AF5 /* RegisterViewController.swift in Sources */,
 				9554BD82206AB1C700013AF5 /* CustomWindowController.swift in Sources */,
 				9554BD8A206AD82E00013AF5 /* NSButton+Custom.swift in Sources */,
+				87FF622D206B6D3900A1DE8F /* User.swift in Sources */,
 				9554BD53206A79D500013AF5 /* AppDelegate.swift in Sources */,
 				87FF621F206AC8E800A1DE8F /* ClusterListViewModel.swift in Sources */,
 				87FF6221206AC8E800A1DE8F /* Cluster.swift in Sources */,
@@ -483,7 +500,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "SuperKomputer-Mac/SuperKomputer_Mac.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = CRCC8S2RPF;
@@ -499,7 +515,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "SuperKomputer-Mac/SuperKomputer_Mac.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = CRCC8S2RPF;

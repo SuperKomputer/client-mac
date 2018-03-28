@@ -43,7 +43,17 @@ class RegisterViewController: NSViewController {
     
     @IBAction func register(_ sender: Any) {
         
+        let user = User(inUserName: username.stringValue,
+                        inFirstName: username.stringValue,
+                        inLastName: username.stringValue,
+                        userId: Int(Date().timeIntervalSince1970),
+                        inEmail: "email@vmware.com")
+        let creatUserParam = CreateUserRequestParam(user: user)
+        
+        let registerVM = RegisterViewModel()
+        registerVM.createUser(param: creatUserParam) { (user) in
+        
+            //TODO: Handle navigationg to dashboard on succesfull login
+        }
     }
-    
-    
 }
