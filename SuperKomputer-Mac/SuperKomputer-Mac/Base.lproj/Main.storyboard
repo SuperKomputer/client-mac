@@ -1202,7 +1202,8 @@
                                     <rect key="frame" x="1" y="1" width="678" height="447"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
-                                <color key="borderColor" red="1" green="0.26273494838486267" blue="0.014063230415000127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="borderColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="fillColor" red="1" green="0.78495082724047971" blue="0.70216119652562603" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </box>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hvT-U6-bQw">
                                 <rect key="frame" x="335" y="517" width="51" height="51"/>

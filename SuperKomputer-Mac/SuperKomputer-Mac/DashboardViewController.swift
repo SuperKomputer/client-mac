@@ -42,7 +42,6 @@ class DashboardViewController: NSViewController {
         rentViewController = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil).instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "rent")) as? RentViewController
         rentViewController?.view.frame = container.bounds
         self.container.addSubview(rentViewController!.view)
-        self.container.borderColor = NSColor(red: 91.0, green: 211.0, blue: 153.0, alpha: 1.0)
         
         guard self.requestViewController == nil else {
             print("Request screen already present!!")
