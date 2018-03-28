@@ -714,20 +714,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="720" height="568"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wSU-wI-Urg">
+                                <rect key="frame" x="0.0" y="0.0" width="720" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="axesIndependently" image="metallic" id="cf3-lj-Wa1"/>
+                            </imageView>
                             <box autoresizesSubviews="NO" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="jtu-SS-43U">
-                                <rect key="frame" x="152" y="131" width="416" height="303"/>
+                                <rect key="frame" x="152" y="16" width="416" height="303"/>
                                 <view key="contentView" id="YyO-re-iab">
                                     <rect key="frame" x="1" y="1" width="414" height="301"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JT7-i8-0Nw">
-                                            <rect key="frame" x="46" y="98" width="322" height="51"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="SuperKomputer" id="gQU-XV-iGh">
-                                                <font key="font" metaFont="systemBold" size="42"/>
-                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                            </textFieldCell>
-                                        </textField>
                                         <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="0cw-al-VkE">
                                             <rect key="frame" x="20" y="20" width="177" height="57"/>
                                             <view key="contentView" id="Ber-W4-YKH">
@@ -750,6 +747,7 @@
                                                     </button>
                                                 </subviews>
                                                 <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="rDD-Pt-aYr" secondAttribute="bottom" constant="2" id="YVe-RQ-EFg"/>
                                                     <constraint firstAttribute="trailing" secondItem="rDD-Pt-aYr" secondAttribute="trailing" id="co2-1P-4Hb"/>
                                                     <constraint firstItem="rDD-Pt-aYr" firstAttribute="top" secondItem="Ber-W4-YKH" secondAttribute="top" id="d8x-kC-zD8"/>
                                                     <constraint firstItem="rDD-Pt-aYr" firstAttribute="leading" secondItem="Ber-W4-YKH" secondAttribute="leading" id="ifg-nw-qmx"/>
@@ -758,14 +756,6 @@
                                             <color key="borderColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="fillColor" red="0.40857463308179798" green="0.82849723100662231" blue="0.82183123591397045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </box>
-                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lCW-H0-g3d">
-                                            <rect key="frame" x="145" y="157" width="124" height="124"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="lCW-H0-g3d" secondAttribute="height" multiplier="1:1" id="BAw-Vm-ctf"/>
-                                                <constraint firstAttribute="width" constant="124" id="Oqe-9G-EBH"/>
-                                            </constraints>
-                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="top" imageScaling="proportionallyDown" image="sk-logo-2" id="ZU8-eY-HlW"/>
-                                        </imageView>
                                         <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Ra4-De-YRy">
                                             <rect key="frame" x="217" y="20" width="177" height="57"/>
                                             <view key="contentView" id="B0l-3E-vo1">
@@ -794,13 +784,8 @@
                                         <constraint firstItem="0cw-al-VkE" firstAttribute="leading" secondItem="YyO-re-iab" secondAttribute="leading" constant="20" id="CVr-lG-0qy"/>
                                         <constraint firstItem="Ra4-De-YRy" firstAttribute="leading" secondItem="rDD-Pt-aYr" secondAttribute="trailing" constant="21" id="EwR-tr-6Zl"/>
                                         <constraint firstItem="Ra4-De-YRy" firstAttribute="top" secondItem="0cw-al-VkE" secondAttribute="top" id="FXt-6s-L1n"/>
-                                        <constraint firstItem="lCW-H0-g3d" firstAttribute="centerX" secondItem="YyO-re-iab" secondAttribute="centerX" id="RVm-HB-WYl"/>
                                         <constraint firstAttribute="bottom" secondItem="Ra4-De-YRy" secondAttribute="bottom" constant="20" id="eHc-Ba-zyM"/>
-                                        <constraint firstItem="JT7-i8-0Nw" firstAttribute="centerX" secondItem="YyO-re-iab" secondAttribute="centerX" id="gJ0-0R-msd"/>
-                                        <constraint firstItem="JT7-i8-0Nw" firstAttribute="top" secondItem="lCW-H0-g3d" secondAttribute="bottom" constant="8" id="o0f-VX-Lir"/>
-                                        <constraint firstItem="lCW-H0-g3d" firstAttribute="top" secondItem="YyO-re-iab" secondAttribute="top" constant="20" id="oHV-NU-WDP"/>
                                         <constraint firstAttribute="bottom" secondItem="0cw-al-VkE" secondAttribute="bottom" constant="20" id="ubd-Ba-IhU"/>
-                                        <constraint firstItem="0cw-al-VkE" firstAttribute="top" secondItem="JT7-i8-0Nw" secondAttribute="bottom" constant="21" id="yHT-nA-Sw1"/>
                                     </constraints>
                                 </view>
                                 <constraints>
@@ -810,7 +795,7 @@
                             </box>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="jtu-SS-43U" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="8se-0c-Sps"/>
+                            <constraint firstAttribute="bottom" secondItem="jtu-SS-43U" secondAttribute="bottom" constant="20" id="HWM-Pt-AJG"/>
                             <constraint firstItem="jtu-SS-43U" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="gM6-bc-c67"/>
                         </constraints>
                     </view>
@@ -1585,6 +1570,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="metallic" width="480" height="360"/>
         <image name="sk-logo-2" width="180" height="180"/>
     </resources>
 </document>

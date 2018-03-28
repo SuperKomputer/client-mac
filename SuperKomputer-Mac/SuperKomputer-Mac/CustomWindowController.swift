@@ -13,7 +13,7 @@ class CustomWindowController: NSWindowController {
     override func windowDidLoad() {
         super.windowDidLoad()
     
-        self.window?.backgroundColor = NSColor.white
+        self.window?.backgroundColor = NSColor.darkGray
         self.window?.titleVisibility = .hidden
         self.window?.titlebarAppearsTransparent = true
 
