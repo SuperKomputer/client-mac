@@ -1031,7 +1031,7 @@
                 </viewController>
                 <customObject id="BlP-j4-5vo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="62" y="1648"/>
+            <point key="canvasLocation" x="-321" y="1638"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="yTA-iO-1d7">
@@ -1160,7 +1160,110 @@
                 </viewController>
                 <customObject id="eEh-i6-oKv" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="839" y="1648"/>
+            <point key="canvasLocation" x="456" y="1638"/>
+        </scene>
+        <!--Dashboard View Controller-->
+        <scene sceneID="VXN-O6-QBm">
+            <objects>
+                <viewController storyboardIdentifier="login" id="RwY-Mt-htp" customClass="DashboardViewController" customModule="SuperKomputer_Mac" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="hs2-UI-NQs">
+                        <rect key="frame" x="0.0" y="0.0" width="720" height="568"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="Uy7-Td-OrO">
+                                <rect key="frame" x="361" y="475" width="339" height="34"/>
+                                <view key="contentView" id="26b-9i-Ct0">
+                                    <rect key="frame" x="1" y="1" width="337" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="INv-o4-Wh8">
+                                            <rect key="frame" x="1" y="-2" width="337" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <buttonCell key="cell" type="bevel" title="Request" bezelStyle="rounded" alignment="center" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="PT5-GF-j66">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="systemBold"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="login:" target="RwY-Mt-htp" id="gd3-xH-ozx"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="L1e-Du-4uO"/>
+                                    <constraint firstAttribute="width" constant="339" id="XfU-RZ-q8D"/>
+                                </constraints>
+                                <color key="borderColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="fillColor" red="0.88624331773620257" green="0.70498119366099266" blue="0.96985906362533569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </box>
+                            <box title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="eme-tP-TZ3">
+                                <rect key="frame" x="17" y="16" width="686" height="455"/>
+                                <view key="contentView" id="pNU-iE-GBB">
+                                    <rect key="frame" x="2" y="2" width="682" height="451"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                            </box>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hvT-U6-bQw">
+                                <rect key="frame" x="335" y="517" width="51" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="OfM-eY-5L5"/>
+                                    <constraint firstAttribute="width" constant="51" id="TRG-vY-rHK"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageAlignment="top" imageScaling="proportionallyDown" image="sk-logo-2" id="Ivk-mD-ZaV"/>
+                            </imageView>
+                            <box boxType="custom" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="L8P-c8-884">
+                                <rect key="frame" x="20" y="475" width="339" height="34"/>
+                                <view key="contentView" id="z4z-d0-Ubi">
+                                    <rect key="frame" x="1" y="1" width="337" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Vob-og-dGK">
+                                            <rect key="frame" x="1" y="-2" width="337" height="34"/>
+                                            <buttonCell key="cell" type="bevel" title="Rent" bezelStyle="rounded" alignment="center" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="Lhp-cL-XeT">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="systemBold"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="cancel:" target="RwY-Mt-htp" id="TBw-zz-luf"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Vob-og-dGK" firstAttribute="leading" secondItem="z4z-d0-Ubi" secondAttribute="leading" constant="1" id="8dR-S1-4cm"/>
+                                        <constraint firstAttribute="bottom" secondItem="Vob-og-dGK" secondAttribute="bottom" constant="-2" id="T0S-2y-3Xr"/>
+                                        <constraint firstItem="Vob-og-dGK" firstAttribute="top" secondItem="z4z-d0-Ubi" secondAttribute="top" id="Yaq-h4-LDd"/>
+                                        <constraint firstAttribute="trailing" secondItem="Vob-og-dGK" secondAttribute="trailing" constant="-1" id="zSC-TY-0Kl"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="5w4-lR-7Q8"/>
+                                    <constraint firstAttribute="width" constant="339" id="jYN-Ff-WLK"/>
+                                </constraints>
+                                <color key="borderColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="fillColor" red="0.35853572398481048" green="0.82849723099999995" blue="0.60055067199063539" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </box>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="L8P-c8-884" firstAttribute="leading" secondItem="hs2-UI-NQs" secondAttribute="leading" constant="20" id="7iN-Mk-pr2"/>
+                            <constraint firstItem="eme-tP-TZ3" firstAttribute="leading" secondItem="hs2-UI-NQs" secondAttribute="leading" constant="20" id="JJv-2O-vR1"/>
+                            <constraint firstItem="Uy7-Td-OrO" firstAttribute="leading" secondItem="L8P-c8-884" secondAttribute="trailing" constant="2" id="PJ4-07-2gN"/>
+                            <constraint firstItem="eme-tP-TZ3" firstAttribute="top" secondItem="Vob-og-dGK" secondAttribute="bottom" constant="5" id="XFa-TT-N1l"/>
+                            <constraint firstItem="L8P-c8-884" firstAttribute="top" secondItem="hvT-U6-bQw" secondAttribute="bottom" constant="8" id="ZHq-BK-fPx"/>
+                            <constraint firstItem="hvT-U6-bQw" firstAttribute="centerX" secondItem="hs2-UI-NQs" secondAttribute="centerX" id="beD-qw-3NW"/>
+                            <constraint firstItem="hvT-U6-bQw" firstAttribute="top" secondItem="hs2-UI-NQs" secondAttribute="top" id="g9S-fo-o5T"/>
+                            <constraint firstAttribute="bottom" secondItem="eme-tP-TZ3" secondAttribute="bottom" constant="20" id="mfg-RA-KqF"/>
+                            <constraint firstItem="Uy7-Td-OrO" firstAttribute="top" secondItem="L8P-c8-884" secondAttribute="top" id="n9K-3D-bpy"/>
+                            <constraint firstAttribute="trailing" secondItem="eme-tP-TZ3" secondAttribute="trailing" constant="20" id="yuY-W3-Kk8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelBtn" destination="Vob-og-dGK" id="CKj-db-qfa"/>
+                        <outlet property="loginBtn" destination="INv-o4-Wh8" id="ILH-rz-TfZ"/>
+                    </connections>
+                </viewController>
+                <customObject id="glY-fp-wYr" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="2320"/>
         </scene>
     </scenes>
     <resources>
