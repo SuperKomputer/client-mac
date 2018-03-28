@@ -57,6 +57,9 @@ class RegisterViewController: NSViewController {
                 return
             }
             
+            UserDefaults.standard.setValue(user!.id, forKey: "user_id")
+            UserDefaults.standard.synchronize()
+            
             DispatchQueue.main.async {
                 let dashboardViewController = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil).instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "dashboard")) as? DashboardViewController
                 AppDelegate.instance.currentViewController = dashboardViewController        }

@@ -25,8 +25,8 @@ class DashboardViewController: NSViewController {
         self.view.wantsLayer = true
         self.view.layer?.backgroundColor = NSColor.white.cgColor
         
-        rentBtn.setWhiteTitle("Rent a cluster")
-        requestBtn.setWhiteTitle("Request a cluster")
+        rentBtn.setWhiteTitle("My clusters")
+        requestBtn.setWhiteTitle("Global cluster list")
         
         AppDelegate.instance.currentViewController = self
         

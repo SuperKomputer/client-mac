@@ -15,6 +15,8 @@ class RentViewController: NSViewController, NSTableViewDataSource, NSTableViewDe
     @IBOutlet weak var rentBtn: NSButton!
     @IBOutlet weak var stopBtn: NSButton!
     
+    var dataSource: [ClusterViewModel] = [ClusterViewModel]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +26,21 @@ class RentViewController: NSViewController, NSTableViewDataSource, NSTableViewDe
         self.view.wantsLayer = true
         self.view.layer?.backgroundColor = NSColor(red: 91.0, green: 211.0, blue: 153.0, alpha: 1.0).cgColor
         
+        fetchClusters()
+    }
+    
+    func fetchClusters() {
+        if let userId = UserDefaults.standard.string(forKey: "user_id") {
+            let requestParam = ClustersRequestParam(userId: userId)
+            ClusterListViewModel().getClusters(param: requestParam) { [weak self] (clustersViewModels) in
+                if clustersViewModels.count > 0 {
+                    self?.dataSource.append(contentsOf: clustersViewModels)
+                    DispatchQueue.main.async {
+                        self?.clusterListView.reloadData()
+                    }
+                }
+            }
+        }
     }
     
     override func viewDidAppear() {
@@ -39,12 +56,26 @@ class RentViewController: NSViewController, NSTableViewDataSource, NSTableViewDe
     }
     
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return 5
+        return self.dataSource.count
     }
     
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any?  {
-        let s: String = "r:\(row)/c::\(tableColumn!.identifier.rawValue)"
-        return s
+        let clusterViewModel: ClusterViewModel = self.dataSource[row]
+        
+        switch tableColumn!.identifier.rawValue {
+        case "slno":
+            return row + 1
+        case "masters":
+            return clusterViewModel.numOfmasters
+        case "workers":
+            return clusterViewModel.numOfWorkers
+        case "status":
+            return ((clusterViewModel.status.rawValue == 1) ? "Up" : "Down")
+        case "clusterURI":
+            return clusterViewModel.clusterURI
+        default:
+            return ""
+        }
     }
 
 }
