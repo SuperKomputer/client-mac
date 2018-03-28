@@ -29,6 +29,7 @@
 		9554BD88206ACFE000013AF5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD87206ACFE000013AF5 /* RegisterViewController.swift */; };
 		9554BD8A206AD82E00013AF5 /* NSButton+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD89206AD82E00013AF5 /* NSButton+Custom.swift */; };
 		9554BD8C206AE0E200013AF5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD8B206AE0E200013AF5 /* LoginViewController.swift */; };
+		9554BD8E206B6D2B00013AF5 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD8D206B6D2B00013AF5 /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		9554BD87206ACFE000013AF5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9554BD89206AD82E00013AF5 /* NSButton+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSButton+Custom.swift"; sourceTree = "<group>"; };
 		9554BD8B206AE0E200013AF5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9554BD8D206B6D2B00013AF5 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				9554BD87206ACFE000013AF5 /* RegisterViewController.swift */,
 				87FF622E206B777500A1DE8F /* RegisterViewModel.swift */,
 				9554BD8B206AE0E200013AF5 /* LoginViewController.swift */,
+				9554BD8D206B6D2B00013AF5 /* DashboardViewController.swift */,
 				9554BD85206ACC9C00013AF5 /* CustomWindow.swift */,
 				9554BD81206AB1C700013AF5 /* CustomWindowController.swift */,
 				9554BD56206A79D500013AF5 /* Assets.xcassets */,
@@ -329,6 +332,7 @@
 			files = (
 				87FF622B206B6CF400A1DE8F /* APICore+CreateUser.swift in Sources */,
 				87FF6222206AC8E800A1DE8F /* APICore+ClusterList.swift in Sources */,
+				9554BD8E206B6D2B00013AF5 /* DashboardViewController.swift in Sources */,
 				9554BD8C206AE0E200013AF5 /* LoginViewController.swift in Sources */,
 				87FF622F206B777500A1DE8F /* RegisterViewModel.swift in Sources */,
 				9554BD55206A79D500013AF5 /* WelcomeViewController.swift in Sources */,

@@ -11,7 +11,18 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
+    static var instance: AppDelegate {
+        return (NSApp.delegate as! AppDelegate)
+    }
+    
+    var currentViewController: NSViewController? {
+        didSet {
+            if oldValue != currentViewController, let newValue = currentViewController {
+                oldValue?.view.removeFromSuperview()
+                NSApp.mainWindow?.contentView = newValue.view
+            }
+        }
+    }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
@@ -21,6 +32,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        return true
+    }
 
 }
 

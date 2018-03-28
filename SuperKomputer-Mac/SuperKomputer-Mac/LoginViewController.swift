@@ -33,7 +33,8 @@ class LoginViewController: NSViewController {
     }
     
     @IBAction func login(_ sender: Any) {
-        
+        let dashboardViewController = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil).instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "dashboard")) as? DashboardViewController
+        AppDelegate.instance.currentViewController = dashboardViewController
     }
 
     

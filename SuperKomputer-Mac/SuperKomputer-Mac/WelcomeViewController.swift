@@ -22,6 +22,8 @@ class WelcomeViewController: NSViewController {
         self.view.layer?.backgroundColor = NSColor.white.cgColor
         loginBtn.setWhiteTitle("Login")
         registerBtn.setWhiteTitle("Register")
+        
+        AppDelegate.instance.currentViewController = self
     }
 
     override var representedObject: Any? {
