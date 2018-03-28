@@ -64,12 +64,12 @@ extension APICore {
         let createTask = session.dataTask(with: urlRequest, completionHandler: { (data, response, error) in
             
             // TODO: Need to revist, need to check the ststus code for craete user flow
-            if error != nil {
-                let responseParam = CreateUserResponseParam(success: false,
-                                                       user: param.user,
-                                                       error: nil)
-                callBack(responseParam)
-            }
+            
+            let responseParam = CreateUserResponseParam(success: ((error != nil) ? false : true),
+                                                        user: param.user,
+                                                        error: error)
+            
+            callBack(responseParam)
         })
         createTask.resume()
     }

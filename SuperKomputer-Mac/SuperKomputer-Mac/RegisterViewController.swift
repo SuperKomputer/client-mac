@@ -14,10 +14,11 @@ class RegisterViewController: NSViewController {
     @IBOutlet weak var cancelBtn: NSButton!
     @IBOutlet weak var registerBtn: NSButton!
     
-    @IBOutlet weak var fullName: NSTextField!
-    @IBOutlet weak var username: NSTextField!
+    @IBOutlet weak var firstName: NSTextField!
+    @IBOutlet weak var lastName: NSTextField!
+    @IBOutlet weak var userName: NSTextField!
+    @IBOutlet weak var email: NSTextField!
     @IBOutlet weak var password: NSTextField!
-    @IBOutlet weak var confirmPassword: NSTextField!
     @IBOutlet weak var walletLink: NSTextField!
     
     var closingHandler: (() -> Void)?
@@ -43,17 +44,23 @@ class RegisterViewController: NSViewController {
     
     @IBAction func register(_ sender: Any) {
         
-        let user = User(inUserName: username.stringValue,
-                        inFirstName: username.stringValue,
-                        inLastName: username.stringValue,
+        let user = User(inUserName: userName.stringValue,
+                        inFirstName: firstName.stringValue,
+                        inLastName: lastName.stringValue,
                         userId: Int(Date().timeIntervalSince1970),
-                        inEmail: "email@vmware.com")
+                        inEmail: email.stringValue)
         let creatUserParam = CreateUserRequestParam(user: user)
         
         let registerVM = RegisterViewModel()
         registerVM.createUser(param: creatUserParam) { (user) in
-        
-            //TODO: Handle navigationg to dashboard on succesfull login
-        }
+            guard user != nil else {
+                return
+            }
+            
+            DispatchQueue.main.async {
+                let dashboardViewController = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil).instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "dashboard")) as? DashboardViewController
+                AppDelegate.instance.currentViewController = dashboardViewController        }
+
+            }
     }
 }
