@@ -14,6 +14,7 @@ class WelcomeViewController: NSViewController {
     @IBOutlet weak var loginBtn: NSButton!
     
     var registerViewController : RegisterViewController?
+    var loginViewController : LoginViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +48,17 @@ class WelcomeViewController: NSViewController {
     }
     
     @IBAction func login(_ sender: Any) {
+        guard self.loginViewController == nil else {
+            print("Registration screen already present!!")
+            return
+        }
+        
+        loginViewController = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil).instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "login")) as? LoginViewController
+        loginViewController?.closingHandler = { [weak self] in
+            self?.loginViewController?.view.removeFromSuperview()
+            self?.loginViewController = nil
+        }
+        self.view.window?.contentView?.addSubview(loginViewController!.view)
         
     }
 }

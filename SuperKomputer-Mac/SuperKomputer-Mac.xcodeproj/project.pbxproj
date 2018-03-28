@@ -25,6 +25,7 @@
 		9554BD86206ACC9C00013AF5 /* CustomWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD85206ACC9C00013AF5 /* CustomWindow.swift */; };
 		9554BD88206ACFE000013AF5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD87206ACFE000013AF5 /* RegisterViewController.swift */; };
 		9554BD8A206AD82E00013AF5 /* NSButton+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD89206AD82E00013AF5 /* NSButton+Custom.swift */; };
+		9554BD8C206AE0E200013AF5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD8B206AE0E200013AF5 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		9554BD85206ACC9C00013AF5 /* CustomWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWindow.swift; sourceTree = "<group>"; };
 		9554BD87206ACFE000013AF5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		9554BD89206AD82E00013AF5 /* NSButton+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSButton+Custom.swift"; sourceTree = "<group>"; };
+		9554BD8B206AE0E200013AF5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				9554BD52206A79D500013AF5 /* AppDelegate.swift */,
 				9554BD54206A79D500013AF5 /* WelcomeViewController.swift */,
 				9554BD87206ACFE000013AF5 /* RegisterViewController.swift */,
+				9554BD8B206AE0E200013AF5 /* LoginViewController.swift */,
 				9554BD85206ACC9C00013AF5 /* CustomWindow.swift */,
 				9554BD81206AB1C700013AF5 /* CustomWindowController.swift */,
 				9554BD56206A79D500013AF5 /* Assets.xcassets */,
@@ -311,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87FF6222206AC8E800A1DE8F /* APICore+ClusterList.swift in Sources */,
+				9554BD8C206AE0E200013AF5 /* LoginViewController.swift in Sources */,
 				9554BD55206A79D500013AF5 /* WelcomeViewController.swift in Sources */,
 				87FF6220206AC8E800A1DE8F /* ClusterViewModel.swift in Sources */,
 				87FF621E206AC8E800A1DE8F /* ClustersFactory.swift in Sources */,
