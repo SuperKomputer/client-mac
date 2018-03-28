@@ -8,23 +8,14 @@
 
 import Cocoa
 
-extension NSButton {
-    func setWhiteTitle(_ title: String) {
-        
-        let style = NSMutableParagraphStyle()
-        style.alignment = .center
-        let font: NSFont = NSFont.systemFont(ofSize: 18)
-        self.attributedTitle = NSAttributedString(string: title,
-                                                  attributes: [NSAttributedStringKey.foregroundColor : NSColor.white,
-                                                               NSAttributedStringKey.font : font,
-                                                               NSAttributedStringKey.paragraphStyle: style])
-    }
-}
-
 class WelcomeViewController: NSViewController {
 
     @IBOutlet weak var registerBtn: NSButton!
     @IBOutlet weak var loginBtn: NSButton!
+    
+    var registerViewController : RegisterViewController?
+    var loginViewController : LoginViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,9 +32,33 @@ class WelcomeViewController: NSViewController {
 
     @IBAction func register(_ sender: Any) {
         
+        guard self.registerViewController == nil else {
+            print("Registration screen already present!!")
+            return
+        }
+        
+        registerViewController = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil).instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "register")) as? RegisterViewController
+        registerViewController?.closingHandler = { [weak self] in
+            self?.registerViewController?.view.removeFromSuperview()
+            self?.registerViewController = nil
+        }
+        self.view.window?.contentView?.addSubview(registerViewController!.view)
+        
+        
     }
     
     @IBAction func login(_ sender: Any) {
+        guard self.loginViewController == nil else {
+            print("Registration screen already present!!")
+            return
+        }
+        
+        loginViewController = NSStoryboard(name: NSStoryboard.Name(rawValue: "Main"), bundle: nil).instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "login")) as? LoginViewController
+        loginViewController?.closingHandler = { [weak self] in
+            self?.loginViewController?.view.removeFromSuperview()
+            self?.loginViewController = nil
+        }
+        self.view.window?.contentView?.addSubview(loginViewController!.view)
         
     }
 }
