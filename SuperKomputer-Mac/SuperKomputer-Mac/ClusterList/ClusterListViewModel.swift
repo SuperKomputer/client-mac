@@ -29,6 +29,19 @@ class ClusterListViewModel: ClusterListViewDatasource {
         }
     }
     
+    func getGlobalClusters(block: @escaping ClustersViewModelBlock) {
+        apiCore.getGlobalClusters(callBack: { [unowned self] (responseParam) in
+            if responseParam.success {
+                if let newClusters = responseParam.clusters {
+                    self.clusters = self.getClusterViewModels(clusters: newClusters)
+                }
+                block(self.clusters)
+            } else {
+                //TODO: Handle Failed Case
+            }
+        })
+    }
+    
     func getClusterViewModels(clusters: [Cluster]) -> [ClusterViewModel] {
         var viewModels: [ClusterViewModel] = []
         for cluster in clusters {
