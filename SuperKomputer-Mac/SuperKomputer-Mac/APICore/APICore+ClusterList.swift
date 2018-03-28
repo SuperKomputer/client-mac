@@ -10,6 +10,7 @@ import Foundation
 
 struct ClustersRequestParam {
     var userId: String
+    var page: Int
 }
 
 struct ClusterResponseParam {

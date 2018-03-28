@@ -28,7 +28,7 @@ class ClusterFactory_Tests: XCTestCase {
                 let object = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
                 if let dictionary = object as? [String: Any] {
                     let clusters = ClusterFactory.getClusters(from: dictionary)
-                    XCTAssertEqual(clusters.count, 0)
+                    XCTAssertEqual(clusters.count, 1)
                 }
             }
         }
