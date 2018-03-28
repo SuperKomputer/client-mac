@@ -9,11 +9,11 @@
 import Foundation
 
 class ClusterFactory {
-    static func getClusters(from json: [String: Any]) -> [Cluster]{
+    static func getClusters(from json: [Any]) -> [Cluster]{
         var clusters: [Cluster] = []
         if !JSONSerialization.isValidJSONObject(json) { return clusters }
 
-        guard let clustersJson = json["items"] as? [[String: Any]] else { return clusters }
+        guard let clustersJson = json as? [[String: Any]] else { return clusters }
         
         for clusterJson in clustersJson {
             

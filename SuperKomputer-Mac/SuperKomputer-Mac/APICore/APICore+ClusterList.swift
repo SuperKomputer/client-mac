@@ -57,7 +57,7 @@ extension APICore {
             
             let json = try? JSONSerialization.jsonObject(with: newData, options: [])
             
-            if let jsonResult = json as? [String:Any] {
+            if let jsonResult = json as? [Any] {
                 print(jsonResult)
                 let clusters = ClusterFactory.getClusters(from: jsonResult)
                 let response = ClusterResponseParam(success: true,

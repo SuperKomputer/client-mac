@@ -15,6 +15,7 @@ class RequestViewController: NSViewController, NSTableViewDataSource, NSTableVie
     @IBOutlet weak var stopBtn: NSButton!
     
     var dataSource: [ClusterViewModel] = [ClusterViewModel]()
+    var clusterViewModel: ClusterListViewModel = ClusterListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,7 @@ class RequestViewController: NSViewController, NSTableViewDataSource, NSTableVie
         self.view.layer?.backgroundColor = NSColor(red: 226.0, green: 180.0, blue: 247.0, alpha: 1.0).cgColor
         self.clusterListView.backgroundColor = NSColor(red: 226.0, green: 180.0, blue: 247.0, alpha: 1.0)
         
-        ClusterListViewModel().getGlobalClusters { [weak self] (clustersViewModels) in
+        clusterViewModel.getGlobalClusters { [weak self] (clustersViewModels) in
             if clustersViewModels.count > 0 {
                 self?.dataSource.append(contentsOf: clustersViewModels)
                 DispatchQueue.main.async {
