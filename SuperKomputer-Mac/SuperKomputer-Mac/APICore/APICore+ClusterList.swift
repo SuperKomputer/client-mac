@@ -24,7 +24,7 @@ extension APICore {
     func getClusters(requestParam: ClustersRequestParam, callBack:@escaping getClustersBlock) {
      
         let session = URLSession.shared
-        let urlString = kBaseURL.appending("/users/\(requestParam.userId))/clusters")
+        let urlString = kBaseURL.appending("/v1/users/\(requestParam.userId))/clusters")
         
         guard let url = URL(string: urlString)  else {
             let response = ClusterResponseParam(success: false,
@@ -57,6 +57,5 @@ extension APICore {
             }
         })
         dataTask.resume()
-        
     }
 }
