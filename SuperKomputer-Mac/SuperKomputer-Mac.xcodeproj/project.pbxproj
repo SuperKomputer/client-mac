@@ -18,6 +18,10 @@
 		87FF622B206B6CF400A1DE8F /* APICore+CreateUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF622A206B6CF400A1DE8F /* APICore+CreateUser.swift */; };
 		87FF622D206B6D3900A1DE8F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF622C206B6D3900A1DE8F /* User.swift */; };
 		87FF622F206B777500A1DE8F /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF622E206B777500A1DE8F /* RegisterViewModel.swift */; };
+		87FF6231206BB30600A1DE8F /* APICore+ClusterList_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF6230206BB30600A1DE8F /* APICore+ClusterList_Tests.swift */; };
+		87FF6233206BB32400A1DE8F /* APICore+CreateUser_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF6232206BB32400A1DE8F /* APICore+CreateUser_Tests.swift */; };
+		87FF6235206BB34200A1DE8F /* ClusterListViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF6234206BB34200A1DE8F /* ClusterListViewModel_Tests.swift */; };
+		87FF6237206BB3FC00A1DE8F /* ClusterViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF6236206BB3FC00A1DE8F /* ClusterViewModel_Tests.swift */; };
 		9554BD53206A79D500013AF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD52206A79D500013AF5 /* AppDelegate.swift */; };
 		9554BD55206A79D500013AF5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554BD54206A79D500013AF5 /* WelcomeViewController.swift */; };
 		9554BD57206A79D500013AF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9554BD56206A79D500013AF5 /* Assets.xcassets */; };
@@ -63,6 +67,10 @@
 		87FF622A206B6CF400A1DE8F /* APICore+CreateUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APICore+CreateUser.swift"; sourceTree = "<group>"; };
 		87FF622C206B6D3900A1DE8F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		87FF622E206B777500A1DE8F /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		87FF6230206BB30600A1DE8F /* APICore+ClusterList_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APICore+ClusterList_Tests.swift"; sourceTree = "<group>"; };
+		87FF6232206BB32400A1DE8F /* APICore+CreateUser_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APICore+CreateUser_Tests.swift"; sourceTree = "<group>"; };
+		87FF6234206BB34200A1DE8F /* ClusterListViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterListViewModel_Tests.swift; sourceTree = "<group>"; };
+		87FF6236206BB3FC00A1DE8F /* ClusterViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClusterViewModel_Tests.swift; sourceTree = "<group>"; };
 		9554BD4F206A79D500013AF5 /* SuperKomputer-Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SuperKomputer-Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9554BD52206A79D500013AF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9554BD54206A79D500013AF5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +191,10 @@
 				9554BD65206A79D500013AF5 /* SuperKomputer_MacTests.swift */,
 				9554BD67206A79D500013AF5 /* Info.plist */,
 				87FF6224206AC9DD00A1DE8F /* ClusterFactory_Tests.swift */,
+				87FF6230206BB30600A1DE8F /* APICore+ClusterList_Tests.swift */,
+				87FF6232206BB32400A1DE8F /* APICore+CreateUser_Tests.swift */,
+				87FF6234206BB34200A1DE8F /* ClusterListViewModel_Tests.swift */,
+				87FF6236206BB3FC00A1DE8F /* ClusterViewModel_Tests.swift */,
 				87FF6226206ACFA500A1DE8F /* clusterList.json */,
 			);
 			path = "SuperKomputer-MacTests";
@@ -362,8 +374,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87FF6233206BB32400A1DE8F /* APICore+CreateUser_Tests.swift in Sources */,
 				9554BD66206A79D500013AF5 /* SuperKomputer_MacTests.swift in Sources */,
 				87FF6225206AC9DD00A1DE8F /* ClusterFactory_Tests.swift in Sources */,
+				87FF6237206BB3FC00A1DE8F /* ClusterViewModel_Tests.swift in Sources */,
+				87FF6231206BB30600A1DE8F /* APICore+ClusterList_Tests.swift in Sources */,
+				87FF6235206BB34200A1DE8F /* ClusterListViewModel_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,7 +561,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = CRCC8S2RPF;
+				DEVELOPMENT_TEAM = 3G2TJC7Z49;
 				INFOPLIST_FILE = "SuperKomputer-MacTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.superkomputer.SuperKomputer-MacTests";
@@ -562,7 +578,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = CRCC8S2RPF;
+				DEVELOPMENT_TEAM = 3G2TJC7Z49;
 				INFOPLIST_FILE = "SuperKomputer-MacTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.superkomputer.SuperKomputer-MacTests";

@@ -31,7 +31,7 @@ class RentViewController: NSViewController, NSTableViewDataSource, NSTableViewDe
     
     func fetchClusters() {
         if let userId = UserDefaults.standard.string(forKey: "user_id") {
-            let requestParam = ClustersRequestParam(userId: userId)
+            let requestParam = ClustersRequestParam(userId: userId, page: 0)
             ClusterListViewModel().getClusters(param: requestParam) { [weak self] (clustersViewModels) in
                 if clustersViewModels.count > 0 {
                     self?.dataSource.append(contentsOf: clustersViewModels)
