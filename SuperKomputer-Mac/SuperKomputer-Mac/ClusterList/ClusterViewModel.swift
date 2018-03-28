@@ -36,7 +36,7 @@ class ClusterViewModel: ClusterViewDataSource {
     }
     
     var status: ClusterStatus {
-        return .up
+        return cluster.status == "active" ? .up : .down
     }
     
     var clusterURI: String{
