@@ -55,13 +55,11 @@ class DashboardViewController: NSViewController {
     }
     
     @IBAction func rentACluster(_ sender: Any) {
-        self.container.borderColor = NSColor(red: 91.0, green: 211.0, blue: 153.0, alpha: 1.0)
         rentViewController?.view.isHidden = false
         requestViewController?.view.isHidden = true
     }
     
     @IBAction func requestACluster(_ sender: Any) {
-        self.container.borderColor = NSColor(red: 226.0, green: 180.0, blue: 247.0, alpha: 1.0)
         rentViewController?.view.isHidden = true
         requestViewController?.view.isHidden = false
     }
