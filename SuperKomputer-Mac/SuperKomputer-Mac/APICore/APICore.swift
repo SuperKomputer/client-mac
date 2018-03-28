@@ -8,6 +8,7 @@
 
 import Foundation
 
+let kBaseURL = "http://35.188.15.7:8080"
 class APICore {
 
 }

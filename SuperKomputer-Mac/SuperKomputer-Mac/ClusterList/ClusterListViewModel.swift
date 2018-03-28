@@ -12,6 +12,29 @@ protocol ClusterListViewDatasource {
     var clusters: [ClusterViewModel] { get }
 }
 
+typealias ClustersViewModelBlock = (_ clustersViewModels: [ClusterViewModel]) -> Void
+
+
 class ClusterListViewModel: ClusterListViewDatasource {
     var clusters: [ClusterViewModel] = []
+    let apiCore = APICore()
+    func getClusters(param: ClustersRequestParam, block: @escaping ClustersViewModelBlock) {
+        apiCore.getClusters(requestParam: param) { [unowned self] (responseParam) in
+            if responseParam.success {
+                if let newClusters = responseParam.clusters {
+                    self.clusters = self.getClusterViewModels(clusters: newClusters)
+                }
+                block(self.clusters)
+            }
+        }
+    }
+    
+    func getClusterViewModels(clusters: [Cluster]) -> [ClusterViewModel] {
+        var viewModels: [ClusterViewModel] = []
+        for cluster in clusters {
+            let clusterVM = ClusterViewModel(inCluster: cluster)
+            viewModels.append(clusterVM)
+        }
+        return viewModels
+    }
 }
